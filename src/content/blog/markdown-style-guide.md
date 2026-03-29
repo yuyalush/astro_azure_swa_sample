@@ -1,15 +1,15 @@
 ---
 title: 'Markdown Style Guide'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+description: 'Astro で Markdown コンテンツを書く際に使用できる基本的な Markdown 構文のサンプル集です。'
 pubDate: 'Jun 19 2024'
 heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+Astro で Markdown コンテンツを書く際に使用できる基本的な Markdown 構文のサンプルです。
 
-## Headings
+## 見出し
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+HTML の `<h1>`—`<h6>` 要素は、セクション見出しの 6 つのレベルを表します。`<h1>` が最上位、`<h6>` が最下位のレベルです。
 
 # H1
 
@@ -23,61 +23,61 @@ The following HTML `<h1>`—`<h6>` elements represent six levels of section head
 
 ###### H6
 
-## Paragraph
+## 段落
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+これは段落のサンプルテキストです。段落を作成するには、テキストをそのまま行に書くと、Markdown が自動的に段落要素として扱います。空白行で区切ることで複数の段落を作成できます。
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+段落は文章の基本単位です。長すぎる内容は辺高をの空白行で複数の段落に分割すると読みやすい文章になります。
 
-## Images
+## 画像
 
-### Syntax
+### 構文
 
 ```markdown
 ![Alt text](./full/or/relative/path/of/image)
 ```
 
-### Output
+### 出力
 
 ![blog placeholder](../../assets/blog-placeholder-about.jpg)
 
-## Blockquotes
+## 引用
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+ブロック引用要素は、別のソースから引用したコンテンツを表します。任意で、`footer` または `cite` 要素内に出典を記載したり、注釈や略語などのインライン変更を加えたりすることができます。
 
-### Blockquote without attribution
+### 出典なしの引用
 
-#### Syntax
+#### 構文
 
 ```markdown
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
 > **Note** that you can use _Markdown syntax_ within a blockquote.
 ```
 
-#### Output
+#### 出力
 
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
 > **Note** that you can use _Markdown syntax_ within a blockquote.
 
-### Blockquote with attribution
+### 出典ありの引用
 
-#### Syntax
+#### 構文
 
 ```markdown
 > Don't communicate by sharing memory, share memory by communicating.<br>
 > — <cite>Rob Pike[^1]</cite>
 ```
 
-#### Output
+#### 出力
 
 > Don't communicate by sharing memory, share memory by communicating.<br>
 > — <cite>Rob Pike[^1]</cite>
 
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
+[^1]: 上記の引用は、2015年11月18日の Gopherfest における Rob Pike の[トーク](https://www.youtube.com/watch?v=PAAkCSZUG1c)からの抜粋です。
 
-## Tables
+## テーブル
 
-### Syntax
+### 構文
 
 ```markdown
 | Italics   | Bold     | Code   |
@@ -91,11 +91,11 @@ The blockquote element represents content that is quoted from another source, op
 | --------- | -------- | ------ |
 | _italics_ | **bold** | `code` |
 
-## Code Blocks
+## コードブロック
 
-### Syntax
+### 構文
 
-we can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntax, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash
+3つのバックティック ( ``` ) を新しい行に書き、コードを記述し、再度 3 つのバックティックで閉じることでコードブロックを作成できます。言語固有のシンタックスハイライトを有効にするには、最初の 3 つのバックティックの直後に言語名を一単語で記述します（例: html, javascript, css, markdown, typescript, txt, bash）
 
 ````markdown
 ```html
@@ -112,7 +112,7 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
 ```
 ````
 
-### Output
+### 出力
 
 ```html
 <!doctype html>
@@ -127,11 +127,11 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
 </html>
 ```
 
-## List Types
+## リストの種類
 
-### Ordered List
+### 番号付きリスト
 
-#### Syntax
+#### 構文
 
 ```markdown
 1. First item
@@ -139,15 +139,15 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
 3. Third item
 ```
 
-#### Output
+#### 出力
 
 1. First item
 2. Second item
 3. Third item
 
-### Unordered List
+### 箇条書きリスト
 
-#### Syntax
+#### 構文
 
 ```markdown
 - List item
@@ -155,15 +155,15 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
 - And another item
 ```
 
-#### Output
+#### 出力
 
 - List item
 - Another item
 - And another item
 
-### Nested list
+### ネストしたリスト
 
-#### Syntax
+#### 構文
 
 ```markdown
 - Fruit
@@ -175,7 +175,7 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
   - Cheese
 ```
 
-#### Output
+#### 出力
 
 - Fruit
   - Apple
@@ -185,9 +185,9 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
   - Milk
   - Cheese
 
-## Other Elements — abbr, sub, sup, kbd, mark
+## その他の要素 — abbr, sub, sup, kbd, mark
 
-### Syntax
+### 構文
 
 ```markdown
 <abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
@@ -201,14 +201,14 @@ Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
 ```
 
-### Output
+### 出力
 
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+<abbr title="Graphics Interchange Format">GIF</abbr> はビットマップ画像形式です。
 
 H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
 
-Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
+Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> でセッションを終了します。
 
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+ほとんどの <mark>サンショウウオ</mark> は夜行性で、昆虫・ミミズ・その他の小さな生き物を捕食します。
